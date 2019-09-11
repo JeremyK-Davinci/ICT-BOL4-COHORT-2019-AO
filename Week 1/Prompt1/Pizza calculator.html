@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+   <title>lab 1 - basis</title>
+</head>
+<body>
+    <script type="text/javascript">
+    //Pizza Calculator door J Korteland - Applicatie en Media-ontwikkelaar
+
+const PIZZASMALL = 6.99;
+const PIZZAMEDIUM = 8.99;
+const PIZZALARGE = 11.99;
+//Prijzen van de pizza's
+
+var amountPizzaSmall = prompt("Hoeveel pizza small wilt u?");
+var amountPizzaMedium = prompt("Hoeveel pizza medium wilt u?");
+var amountPizzaLarge = prompt("Hoeveel pizza Large wilt u?");
+var Total = amountPizzaSmall*PIZZASMALL + amountPizzaMedium*PIZZAMEDIUM + amountPizzaLarge*PIZZALARGE;
+//Hoeveelheid pizza's te bestellen
+
+
+document.write(amountPizzaSmall + " Pizza Small : €" + amountPizzaSmall*PIZZASMALL+"<br>");
+document.write(amountPizzaMedium + " Pizza Medium : €" + amountPizzaMedium*PIZZAMEDIUM+"<br>");
+document.write(amountPizzaLarge + " Pizza Large : €" + amountPizzaLarge*PIZZALARGE+"<br>");
+document.write("Total : €"+Total);
+//Prijs per pizza's en totaal prijs
+
+
+
+</script>
+</body>
+</html>
