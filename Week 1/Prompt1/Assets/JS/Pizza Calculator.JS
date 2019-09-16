@@ -5,7 +5,11 @@ const PIZZASMALL = 699/100;
 const PIZZAMEDIUM = 899/100;
 const PIZZALARGE = 1199/100;
 
-var element = document.getElementById('txtColor');
+var element1 = document.getElementById('txtColor1');
+var element2 = document.getElementById('txtColor2');
+var element3 = document.getElementById('txtColor3');
+var element4 = document.getElementById('txtColor4');
+
 
 function order() {
     console.log('Someone ordered');
@@ -17,8 +21,8 @@ function order() {
     var total = amountPizzaSmall*PIZZASMALL + amountPizzaMedium*PIZZAMEDIUM + amountPizzaLarge*PIZZALARGE;
 
     //Prijs per pizza's en totaal prijs
-    element.innerHTML = amountPizzaSmall + " Pizza Small : €" + amountPizzaSmall*PIZZASMALL+"<br>";
-    element.innerHTML = amountPizzaMedium + " Pizza Medium : €" + amountPizzaMedium*PIZZAMEDIUM+"<br>";
-    element.innerHTML = amountPizzaLarge + " Pizza Large : €" + amountPizzaLarge*PIZZALARGE+"<br>";
-    element.innerHTML = "Total: €" + total;
+    element1.innerHTML = amountPizzaSmall + " Pizza Small : €" + amountPizzaSmall*PIZZASMALL+"<br>";
+    element2.innerHTML = amountPizzaMedium + " Pizza Medium : €" + amountPizzaMedium*PIZZAMEDIUM+"<br>";
+    element3.innerHTML = amountPizzaLarge + " Pizza Large : €" + amountPizzaLarge*PIZZALARGE+"<br>";
+    element4.innerHTML = "Total: €" + total;
 }

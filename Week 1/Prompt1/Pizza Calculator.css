@@ -2,7 +2,7 @@ body{
     background-image: url(https://t4.ftcdn.net/jpg/02/34/20/03/240_F_234200318_qGqFF2C4sFC1oCYhiKwWFBcbgUVCqO2W.jpg);
     background-size: 100%;
 
-    color: white;
+    color: #000;
     text-align: right;
     text-size-adjust: 500px;
 }
@@ -12,3 +12,15 @@ h1 {
     text-align: center;
     text-size-adjust: 60px;
 }
+
+.priceList {
+    background:#FFF;
+    opacity:0.8;
+    padding:20px;
+    text-align: right;
+    width:200px;
+    margin:0px auto;
+}
+button.btn {background:#f00;padding:15px;font-size:18px;color:#FFF;}
+
+#txtColor4 {font-weight: bold;}
