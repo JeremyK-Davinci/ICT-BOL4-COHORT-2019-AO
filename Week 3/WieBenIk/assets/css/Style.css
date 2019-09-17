@@ -1,0 +1,84 @@
+body{
+    background-image: url(https://i.ibb.co/V3JCpDD/Mind-Melt-Max.jpg);
+    background-size: 100%;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+p {
+    font-family: Verdana;
+    font-size: 30px;
+}
+h2 {
+    color: rgb(21, 212, 181);
+    text-align: center;
+    font-size: 40px;
+}
+
+a:link {
+  color: rgb(4, 0, 255);
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+a:visited {
+  color: rgb(4, 0, 255);
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+a:hover {
+  color: rgb(7, 150, 26);
+  background-color: transparent;
+  text-decoration: underline;
+  font-size: 30px;
+}
+
+a:active {
+  color: rgb(255, 55, 55);
+  background-color: transparent;
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+img {
+  float: right;
+}
+
+h3 {
+  color: white;
+  text-align: left;
+  font-size: 40px;
+}
+
+.links {
+  background: #FFF;
+  opacity: 0.6;
+}
+
+.relayLinkBack {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  background-color: #FFF;
+  opacity: 0.6;
+  text-align: center;
+  width: 50%;
+}
+
+.relayLinkForward {
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  background-color: #FFF;
+  opacity: 0.6;
+  text-align: center;
+  width: 50%;
+}
+
+
