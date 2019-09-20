@@ -81,4 +81,30 @@ h3 {
   width: 50%;
 }
 
+.navBar {
+  background-color: #FFF;
+  opacity: 1.0;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.navBar a {
+  float: left;
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
 
+.navBar a:hover {
+  background-color: #000;
+  color: rgb(255, 0, 0);
+}
+
+.navBar a.active {
+  background-color: #000;
+  color: rgb(255, 0, 0);
+}
