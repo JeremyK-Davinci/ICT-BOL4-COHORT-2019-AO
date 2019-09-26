@@ -1,0 +1,46 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(http://www.valcadia.com/mad_art/mad_bg_forest.jpg);
+    background-position: center;
+    background-size: 120%;
+}
+
+.container1 {
+    width: 800px;
+    max-width: 80%;
+    background-color: #FFF;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px;
+}
+
+.btn-Grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: hsl(0, 100%, 58%);
+    border: 4px solid hsl(0, 0%, 0%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    outline: none;
+}
+
+.btn:hover {
+    border-color: rgb(30, 255, 0);
+}
