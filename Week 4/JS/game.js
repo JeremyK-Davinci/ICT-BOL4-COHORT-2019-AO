@@ -105,7 +105,7 @@ const textNodes = [
   },
   {
     id: 4,
-    text: "You walk on and stumble upon a camp of sleeping ogre's, you can try to attack but they will wake up. What will you do?",
+    text: "You walk on and stumble upon a camp of sleeping ogres, you can try to attack but they will wake up. What will you do?",
     options: [
       {
         text: "Attack",
@@ -147,7 +147,7 @@ const textNodes = [
   },
   {
     id: 7,
-    text: "Crossing the dragon you see a split up with a sign, 1 path leads to gold and 1 to silver. Which path do you take?",
+    text: "Crossing the dragon you see a crossing with a sign, 1 path leads to gold and 1 to silver. Which path do you take?",
     options: [
       {
         text: "Gold",
@@ -169,6 +169,8 @@ const textNodes = [
       },
       {
         text: "Attack!",
+        requiredState: (currentState) => currentState.sword,
+        setState: { sword: false},
         nextText: 20
       },
       {
@@ -176,7 +178,7 @@ const textNodes = [
         nextText: 21
       },
       {
-        text: "Open the jar in it's face",
+        text: "Open the jar in its face",
         requiredState: (currentState) => currentState.FairyJar,
         setState: { FairyJar: false},
         nextText: 9
@@ -235,7 +237,7 @@ const textNodes = [
   },
   {
     id: 14,
-    text: "You run screaming stranger danger as a grown man. The sherrif takes you away to mental hospital.",
+    text: "You run screaming stranger danger as a grown man. The sheriff takes you away to mental hospital.",
     options: [
       {
         text: "Restart",
