@@ -1,5 +1,5 @@
-const textElement = document.getElementById("text")
-const optionButtonsElement = document.getElementById("option-Buttons")
+var textElement = document.getElementById("text")
+var optionButtonsElement = document.getElementById("option-Buttons")
 
 let state = {}
 
@@ -9,7 +9,7 @@ function startGame() {
 }
 
 function showTextNode(textNodeIndex) {
-  const textNode = textNodes.find(textNode => textNode.id === textNodeIndex)
+  var textNode = textNodes.find(textNode => textNode.id === textNodeIndex)
   textElement.innerText = textNode.text
   while (optionButtonsElement.firstChild) {
     optionButtonsElement.removeChild(optionButtonsElement.firstChild)
@@ -32,7 +32,7 @@ function showOption(option) {
 }
 
 function selectOption(option) {
-  const nextTextNodeId = option.nextText
+  var nextTextNodeId = option.nextText
   if (nextTextNodeId <= 0) {
     return startGame()
     }
