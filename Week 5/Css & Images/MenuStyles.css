@@ -1,0 +1,85 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url(https://wallpaperaccess.com/full/261633.jpg);
+    background-size: 90%
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    line-height: 36px;
+    /*Hoofd Titel*/
+}
+
+h2 {
+    text-align: left;
+    font-size: 20px;
+    line-height: 26px
+    /*Normale Tekst*/
+}
+
+h3 {
+    text-align: center;
+    font-size: 32px;
+    line-height: 32px
+    /*Andere Titels*/
+}
+
+p {
+    text-align: left;
+    font-size: 24px;
+    line-height: 32px;
+    /*Eerste Paragraaf*/
+}
+
+h4 {
+    text-align: left;
+    font-size: 26px;
+    line-height: 32px;
+}
+
+.navBar {
+    background-color: #FFF;
+    opacity: 1.0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .navBar a {
+    float: left;
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navBar a:hover {
+    background-color: #000;
+    color: rgb(255, 0, 0);
+  }
+  
+  .navBar a.active {
+    background-color: #000;
+    color: rgb(255, 0, 0);
+  }
+.links p {text-align:center;}
+
+img {
+    position: center;
+}
+
+.tip {
+    background: #def6ed;
+    border-radius: 4px;
+    padding: 25px;
+}
+
+.container {
+    width: 1000px;
+    margin: 0px auto;
+    padding-bottom: 50px;
+}
