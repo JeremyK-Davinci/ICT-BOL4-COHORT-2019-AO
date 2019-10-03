@@ -1,0 +1,83 @@
+Body {
+    background-image: url("Images/header_bg.jpg");
+    width: 1349px;
+    height: 667px;
+    background-size: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+i {
+    width: 10px;
+    height:10px;
+    color: rgba(255, 255, 255, 0.8);
+    opacity: 0.6;
+    margin-right: 5%;
+}
+.navBar {
+    opacity: 1.0;
+    overflow: hidden;
+    position: center;
+    width: 50%;
+    margin-left: 28%;
+    
+  }
+  .navBar a {
+    float: left;
+    display: block;
+    color: rgba(255, 255, 255, 0.8);
+    opacity: 0.6;
+    padding: 14px 16px(1.4);
+    text-decoration: none;
+    font-size: 17px;
+    width: 16.66%;
+    text-align: center;
+  }
+  
+  .navBar a:hover {
+    color:rgba(255, 255, 255, 0.8);
+    opacity: 0.6;
+  }
+  
+  img {
+      display: block;
+      margin-left: 41%;
+      margin-right: 40%;
+      margin-top: 20%;
+      width: 360px;
+      height: 200px;
+  }
+  p {
+    font-family: 'Roboto', sans-serif;
+    color:rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 14px 16px;
+  }
+  .Navbar {
+    opacity: 1.0;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 50%;
+    margin-left: 28%;
+    
+  }
+  .Navbar a {
+    float: left;
+    display: block;
+    color: rgba(255, 255, 255, 0.8);
+    opacity: 0.6;
+    padding: 14px 16px(1.4);
+    text-decoration: none;
+    font-size: 17px;
+    width: 16.66%;
+  }
+  
+  .Navbar a:hover {
+    color:rgba(255, 255, 255, 0.8);
+    opacity: 0.6;
+  }
+
+  h1 {
+    color:rgba(255, 255, 255, 0.8);
+    opacity: 0.6;
+    margin-left: 35%;
+  }
