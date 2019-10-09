@@ -13,23 +13,22 @@
             // Jou instructies volgen hier
             robotArm.speed = 300
              
-            var i = 9; var a = 0; var b = 0;
-            i = i + a;
-            i = i + b;
+            var i = 0;
 
-            for(i=0; i<10; i++){
+            for(i=0; i<9; i++){
                 robotArm.grab();
                 color = robotArm.scan();
                 if(color == "red"){
-                    while(a<9){
-                        a++;
+                    while(i<9){
+                        i++;
                         robotArm.moveRight();
                     }
                     robotArm.drop();
-                    while(b<10){
-                        b++;
+                    while(i>0){
+                        i--;
                         robotArm.moveLeft();
                     }
+                    i=-1;
 
             }
             else{
