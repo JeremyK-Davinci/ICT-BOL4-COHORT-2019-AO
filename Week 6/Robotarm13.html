@@ -7,9 +7,27 @@
             var robotArm = new RobotArm(canvas);
           
             robotArm.randomLevel( 1, 8);
-            robotArm.speed = 400
             // Je eigen code plaats je hier.
-            
+            robotArm.speed = 400
+            var b=5; var i=0; var a=0;
+            while(i<=b){
+                i++
+                    robotArm.grab();
+                        if(robotArm.scan() == null){
+                            b=0;
+                        }
+            else{
+                for(a=0; a<i; a++){
+                    robotArm.moveRight();
+                }
+                robotArm.drop();
+                for(a=0; a<i; a++){
+                    robotArm.moveLeft();
+                }
+                robotArm.grab();
+            }
+            }
+
             robotArm.run();
           </script>
     </body>
