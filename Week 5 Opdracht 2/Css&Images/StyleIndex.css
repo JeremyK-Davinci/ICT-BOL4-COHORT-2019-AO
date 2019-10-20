@@ -13,29 +13,29 @@ i {
     margin-right: 5%;
 }
 .navBar {
-    opacity: 1.0;
-    overflow: hidden;
-    position: center;
-    width: 50%;
-    margin-left: 28%;
-    
-  }
-  .navBar a {
-    float: left;
-    display: block;
-    color: rgba(255, 255, 255, 0.8);
-    opacity: 0.6;
-    padding: 14px 16px(1.4);
-    text-decoration: none;
-    font-size: 17px;
-    width: 16.66%;
-    text-align: center;
-  }
+  opacity: 1.0;
+  overflow: hidden;
+  position: center;
+  width: 50%;
+  margin-left: 28%;
   
-  .navBar a:hover {
-    color:rgba(255, 255, 255, 0.8);
-    opacity: 0.6;
-  }
+}
+.navBar a {
+  float: left;
+  display: block;
+  color: rgba(255, 255, 255, 0.8);
+  opacity: 0.6;
+  padding: 14px 16px(1.4);
+  text-decoration: none;
+  font-size: 17px;
+  width: 16.66%;
+  text-align: center;
+}
+
+.navBar a:hover {
+  color:rgba(255, 255, 255, 0.8);
+  opacity: 0.6;
+}
   
   img {
       display: block;

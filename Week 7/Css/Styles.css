@@ -16,6 +16,7 @@ h1 {
     line-height:30px;
     color: #FFF;
     text-align: left;
+    padding-bottom: 15px;
 }
 /*----------------------------------------------*/
 h2 {
@@ -170,12 +171,38 @@ body {
 }
 /*----------------------------------------------*/
 .NivoBG{
-    background-color: rgb(51,71,91, 0.9);
+    background-image:linear-gradient(to bottom, rgb(51,71,91,1), rgb(91, 133, 175, 0.8)); 
     width: 100%;
     height: 520px;
 }
 /*----------------------------------------------*/
 .NivoText{
+    float: left;
+    padding: 20px 25px 0px 25px;
+}
+/*----------------------------------------------*/
+.ClothingBG{
+    background-image:linear-gradient(to bottom, rgb(51,71,91,1), rgb(91, 133, 175, 0.8)); 
+    width: 100%;
+    height: 520px;
+}
+/*----------------------------------------------*/
+.ClothingImg1{
+    float: left;
+    padding: 70px 20px 0px 20px;
+}
+/*----------------------------------------------*/
+.ClothingImg2{
+    float: left;
+    padding: 70px 20px 0px 20px;
+}
+/*----------------------------------------------*/
+.ClothingImg3{
+    float: left;
+    padding: 70px 20px 0px 20px;
+}
+/*----------------------------------------------*/
+.ClothingText{
     float: left;
     padding: 20px 25px 0px 25px;
 }
