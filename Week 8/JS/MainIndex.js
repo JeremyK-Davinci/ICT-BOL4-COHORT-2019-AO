@@ -1,3 +1,4 @@
+//----------------Variables------------------//
 var takeOrder = true
 var receipt =  document.getElementById("receipt");
 
@@ -13,7 +14,9 @@ const WIJNPRIJS = 395;
 const FRISPRIJS = 195;
 const SNACKPRIJS8 = 495;
 const SNACKPRIJS16 = 995;
+//------------------------------------------------//
 
+//------------------Hoofd Functie-------------------------//
 function order() {
     
     console.log(takeOrder);
@@ -63,7 +66,9 @@ function order() {
     
 }
 }
+//---------------------------------------------------------------//
 
+//---------------------Bon Functie---------------------------//
 function orderTotal() {
 
     var totalPrice = bierAmnt*BIERPRIJS + wijnAmnt*WIJNPRIJS + frisAmnt*FRISPRIJS + snack8*SNACKPRIJS8 + snack16*SNACKPRIJS16;
@@ -79,3 +84,4 @@ function orderTotal() {
 
     receipt.innerHTML =  receiptBuilder;
 }
+//----------------------------------------------------------//
