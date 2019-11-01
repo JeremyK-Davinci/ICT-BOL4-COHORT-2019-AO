@@ -1,0 +1,78 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+}
+/*----------------------------------------------*/
+body {
+    Padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(Img/Chairs\ in\ Pub.jpg);
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*----------------------------------------------*/
+.container1 {
+    margin-top: 250px;
+    margin-bottom: 20px;
+    width: 800px;
+    /*height: 150px;*/
+    max-width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 14px 2px;
+    /*overflow: auto;*/
+    background-color: rgba(255, 255, 255, 0.6);
+}
+/*----------------------------------------------*/
+.btn {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 10px;
+    margin: 20px auto 0px auto;
+    background-color: rgb(255, 133, 34);
+    /*border: 2px solid #000;*/
+    opacity: 1.0;
+    border-radius: 6px;
+    padding: 12px 12px;
+    outline: none;
+    width: 200px;
+    font-size: 16px;
+    font-weight: bold;
+}
+/*----------------------------------------------*/
+.btn:hover {
+    /*border-color: rgb(30, 255, 0);*/
+    color: rgb(30, 255, 0);
+}
+/*----------------------------------------------*/
+h1 {
+    color: #000;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Courgette', cursive;
+    font-size: 38px;
+}
+/*----------------------------------------------*/
+.PriceList {
+    background: #FFF;
+    opacity: 0.8;
+    padding: 20px;
+    text-align: right;
+    width: 200px;
+    margin: 0 auto;
+}
+/*----------------------------------------------*/
+p {
+    background: #FFF;
+}
+/*----------------------------------------------*/
+.reciept{
+    padding: 20px;
+    text-align: right;
+    width: 200px;
+    margin: 0 auto;
+}
+/*----------------------------------------------*/

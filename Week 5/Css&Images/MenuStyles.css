@@ -69,7 +69,9 @@ h4 {
     background-color: #000;
     color: rgb(255, 0, 0);
   }
-.links p {text-align:center;}
+.links p {
+    text-align:center;
+}
 
 img {
     position: center;
