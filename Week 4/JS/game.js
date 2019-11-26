@@ -41,25 +41,6 @@ function selectOption(option) {
   showTextNode(nextTextNodeId)
 }
 
-class Inventory{
-    constructor(x, y, w, h) {
-      this.x = x; this.y = y; this.w = w; this.h = h;
-      this.color = "rgba(255, 255, 255, 0.5)"
-      this.items = new Array();
-      this.columns = 4;
-    }
-
-    addItem(sprite1) {
-      if (this.items.length == this.columns) {
-        sprite1.vy = -4;
-        return false;
-      }
-
-    this.items.push(sprite1)
-      return true
-    }
-}
-
 const textNodes = [
   {
     id: 1,

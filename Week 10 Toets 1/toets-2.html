@@ -31,7 +31,7 @@
                 boven de stapel. Je mag maximaal 25 regels code toevoegen.
 
             */
-            function moveArm(){
+            /*function moveArm(){
                     for(a=0; a<3; a++){robotArm.moveRight();}
             }
             function moveBlock(){
@@ -55,27 +55,25 @@
                 else if(color=="white"){robotArm.moveLeft();
                                         robotArm.drop();
                                         robotArm.moveRight();
-                                      }}}
+                                      }}}*/
 
             // Jou instructies voor het werkend maken van de code volgen hier
-            /*var right = "right"
-            var left = "left"
-            var number = {}
-            function moveArm(){
-                if(right){
-                    for(a=0; a<3; a++){robotArm.moveRight();}
-                }
+            function moveArm(dir, qty){
+                for(i=0; i<qty; i++){
+                dir == "right" ? robotArm.moveRight() : robotArm.moveLeft();
+            } 
             }
-            function moveBlock(){
-                if(right){  robotArm.grab();
-                            for(b=0; b<number; b++){robotArm.moveRight();}
-                            robotArm.drop();
-                         }
-                if(left){   robotArm.grab();
-                            for(c=0; c<number; c++){robotarm.moveLeft();}
-                            robotArm.drop();
-                        }
-            }*/
+            function moveBlock(richting, aantal){
+                robotArm.grab();
+                moveArm(richting, aantal);
+                robotArm.drop();
+                if(richting == "right"){
+                    richting = "left"
+                } else {
+                    richting = "right"
+                }
+                moveArm(richting, aantal);
+            }
             // De door jou opgegeven instructies uitvoeren
             robotArm.run();
         </script>
