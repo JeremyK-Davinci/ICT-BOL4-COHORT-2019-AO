@@ -1,10 +1,16 @@
+*, *::before, *::after {
+    background-size: cover;
+}
+
 #game-container {
     margin-left: 350px;
     width: 800px;
     height: 100%;
     border: 2px solid rgba(255, 255, 255);
     background-color: rgba(0, 0, 0, 0.8);
+    font-family: "ShadowIntoLight";
 }
+
 #title {
     color: white;
     opacity: 1.1;
@@ -18,10 +24,6 @@
     margin: 0px 4px 0px 4px;
 }
 
-#game-buttons {
-    margin: 0px 4px 0px 4px;
-}
-
 #inventoryItem1 {
     background-color: rgba(255, 255, 255, 0.6);
     height: 50px;
@@ -30,7 +32,7 @@
     margin: 4px 4px 4px 4px;
 }
 
-#inventoryItem2 {
+#inventoryItem2, #inventoryItem3, #inventoryItem4, #inventoryItem5, #inventoryItem6, #inventoryItem7, #inventoryItem8, #inventoryItem9, #inventoryItem10 {
     background-color: rgba(255, 255, 255, 0.6);
     height: 50px;
     width: 50px;
@@ -38,66 +40,21 @@
     margin: 4px 4px 4px 0px;
 }
 
-#inventoryItem3 {
-    background-color: rgba(255, 255, 255, 0.6);
-    height: 50px;
-    width: 50px;
-    border: 2px solid white;
-    margin: 4px 4px 4px 0px;
+#button1, #button2, #button3 {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: rgba(255, 255, 255, 0.6);
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    font-family: "Bloody";
+    margin: 0px 4px 0px 4px;
+    min-width: 200px;;
 }
 
-#inventoryItem4 {
-    background-color: rgba(255, 255, 255, 0.6);
-    height: 50px;
-    width: 50px;
-    border: 2px solid white;
-    margin: 4px 4px 4px 0px;
+@font-face {
+    font-family: "ShadowIntoLight";
+    src: url(ShadowsIntoLight-Regular.ttf);
 }
 
-#inventoryItem5 {
-    background-color: rgba(255, 255, 255, 0.6);
-    height: 50px;
-    width: 50px;
-    border: 2px solid white;
-    margin: 4px 4px 4px 0px;
-}
-
-#inventoryItem6 {
-    background-color: rgba(255, 255, 255, 0.6);
-    height: 50px;
-    width: 50px;
-    border: 2px solid white;
-    margin: 4px 4px 4px 0px;
-}
-
-#inventoryItem7 {
-    background-color: rgba(255, 255, 255, 0.6);
-    height: 50px;
-    width: 50px;
-    border: 2px solid white;
-    margin: 4px 4px 4px 0px;
-}
-
-#inventoryItem8 {
-    background-color: rgba(255, 255, 255, 0.6);
-    height: 50px;
-    width: 50px;
-    border: 2px solid white;
-    margin: 4px 4px 4px 0px;
-}
-
-#inventoryItem9 {
-    background-color: rgba(255, 255, 255, 0.6);
-    height: 50px;
-    width: 50px;
-    border: 2px solid white;
-    margin: 4px 4px 4px 0px;
-}
-
-#inventoryItem10 {
-    background-color: rgba(255, 255, 255, 0.6);
-    height: 50px;
-    width: 50px;
-    border: 2px solid white;
-    margin: 4px 4px 4px 0px;
+@font-face {
+    font-family: "Bloody";
+    src: url(SomethingStrange.ttf);
 }
