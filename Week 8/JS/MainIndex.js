@@ -74,11 +74,11 @@ function orderTotal() {
     var totalPrice = bierAmnt*BIERPRIJS + wijnAmnt*WIJNPRIJS + frisAmnt*FRISPRIJS + snack8*SNACKPRIJS8 + snack16*SNACKPRIJS16;
     var receiptBuilder = "";
     receiptBuilder += "<h1> Marios payment</h1>";
-    receiptBuilder += "Aantal bier: " + bierAmnt +" totaal bierprijs: €"+ bierAmnt*(BIERPRIJS/100)+ "<br>";
-    receiptBuilder += "Aantal wijn: " + wijnAmnt +" totaal wijnprijs: €"+ wijnAmnt*(WIJNPRIJS/100)+ "<br>";
-    receiptBuilder += "Aantal fris: " + frisAmnt +" totaal frisprijs: €"+ frisAmnt*(FRISPRIJS/100)+ "<br>";
-    receiptBuilder += "Aantal 8 snacks: " + snack8 +" totaal prijs 8 snacks: €"+ snack8*(SNACKPRIJS8/100)+ "<br>";
-    receiptBuilder += "Aantal 16 snacks: " + snack16 +" totaal prijs 16 snacks: €"+ snack16*(SNACKPRIJS16/100)+ "<br>";
+    if(bierAmnt > 0){receiptBuilder += "Aantal bier: " + bierAmnt +" totaal bierprijs: €"+ bierAmnt*(BIERPRIJS/100)+ "<br>";} else {}
+    if(wijnAmnt > 0){receiptBuilder += "Aantal wijn: " + wijnAmnt +" totaal wijnprijs: €"+ wijnAmnt*(WIJNPRIJS/100)+ "<br>";} else {}
+    if(frisAmnt > 0){receiptBuilder += "Aantal fris: " + frisAmnt +" totaal frisprijs: €"+ frisAmnt*(FRISPRIJS/100)+ "<br>";} else {}
+    if(snack8Amnt > 0){receiptBuilder += "Aantal 8 snacks: " + snack8 +" totaal prijs 8 snacks: €"+ snack8*(SNACKPRIJS8/100)+ "<br>";} else {}
+    if(snack16Amnt > 0){receiptBuilder += "Aantal 16 snacks: " + snack16 +" totaal prijs 16 snacks: €"+ snack16*(SNACKPRIJS16/100)+ "<br>";} else {}
     receiptBuilder += "----------------------------------- + <br>";
     receiptBuilder += "Subtotaal: €" + (totalPrice/100);
 

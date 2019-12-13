@@ -480,6 +480,18 @@ var words = [
 	"zeeen"
 ];
 
-function showDiv() {
-	document.getElementById('lingoMenu').style.display = "block";
- }
+var word = words[Math.floor(Math.random()*words.length)];
+document.onload = console.log(word)
+var split1 = word.split('')
+
+var btn = document.getElementById("submit");
+btn.setAttribute("onclick", "processInput()")
+
+function processInput() {
+	var userInput = document.getElementById("input").value;
+	var result = userInput.split('');
+	for(var i = 1; i <= result.length; i++){
+		document.getElementById("box" + i).innerHTML = result[i];
+	}
+
+}
