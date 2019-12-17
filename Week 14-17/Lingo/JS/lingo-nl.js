@@ -481,17 +481,39 @@ var words = [
 ];
 
 var word = words[Math.floor(Math.random()*words.length)];
-document.onload = console.log(word)
-var split1 = word.split('')
+var split2 = word.split('');
+var btn = document.getElementById("submit")
+btn.setAttribute("onclick", "submit()")
 
-var btn = document.getElementById("submit");
-btn.setAttribute("onclick", "processInput()")
+console.log(word);
 
-function processInput() {
-	var userInput = document.getElementById("input").value;
-	var result = userInput.split('');
-	for(var i = 1; i <= result.length; i++){
-		document.getElementById("box" + i).innerHTML = result[i];
+function startGame(){
+	var container = document.getElementById("wrapper")
+	for(var b=0; b<5; b++){
+		for(var c=0; c<5; c++){
+			var menu = document.createElement("div")
+			menu.setAttribute("id", "box_" + b + "_" + c)
+			container.appendChild(menu)
+			menu.style.backgroundColor = ("lightgrey")
+			menu.style.color = ("black")
+			menu.style.border = ("1px solid black")
+			menu.style.padding = ("0px 10px 7px 9px")
+			menu.style.justifyContent = ("center")
+		}
 	}
-
 }
+
+function submit() {
+	var input = document.getElementById("input").value;
+	var split1 = input.split('');
+		for(var i = 0; i<split1.length; i++){
+			document.getElementById("box_" + i).innerText = split1[i]
+			if(split1[i] === split2[i]){
+				document.getElementById("box_" + i).style.backgroundColor = ("rgb(17, 199, 17)")
+			}
+		}
+	console.log(split1);
+	console.log(split2);
+}
+
+startGame()
