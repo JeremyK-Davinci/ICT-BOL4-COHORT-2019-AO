@@ -20,21 +20,6 @@ h1 {
     margin-left: 23%;
     margin-top: 75px;
 }
-
-.box {
-    background-color: lightgrey;
-    color: black;
-    border: 1px solid black;
-    padding: 0px 10px 7px 9px;
-    justify-content: center;
-}
-
-#box0, #box1, #box2, #box3, #box4 {
-    margin-bottom: 5px;
-    font-size: 65px;
-    font-weight: 600;
-    padding-bottom:5px;
-}
   
 #wrapper {
     width: 600px;
