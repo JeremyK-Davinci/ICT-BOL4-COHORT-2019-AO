@@ -479,7 +479,3 @@ var words = [
 	"zever",
 	"zeeen"
 ];
-
-function showDiv() {
-	document.getElementById('lingoMenu').style.display = "block";
- }
