@@ -16,40 +16,39 @@ h1 {
 #menu {
     width: 800px;
     height:400px;
-    background-color: gray;
+    background-color: rgb(209, 209, 209);
     margin-left: 23%;
     margin-top: 75px;
 }
-
-label[for=Word] {
-    margin-right: 12px;
-    margin-left: 20px;
-    color: blue
-}
-
-label[for=Letter] {
-    margin-right: 10px;
-    margin-left: 20px;
-    color: blue;
-}
-
-#Word {
+  
+#wrapper {
     width: 600px;
-    height: 30px;
-    margin-top: 20px;
-    margin-left: 20px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(5, 70px);
+    grid-template-rows: repeat(5, 70px);
+    grid-auto-flow: row;
 }
 
-#Letter {
-    width: 600px;
-    height: 30px;
-    margin-top: 20px;
-    margin-left: 20px;
+input[type=text]{
+    border: 1px solid black;
+    border-radius: 5px;
+    position: absolute;
+    margin-left: 430px;
+    width: 300px;
+    height: 25px;
+    margin-top: 120px;
 }
 
-#Check {
-    margin-left: 45%;
-    margin-top: 40px;
+#submit{
+    background-color: rgb(0, 255, 0);
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 150px;
+    height: 25px;
+    position: absolute;
+    margin-left: 500px;
+    margin-top: 150px;
 }
 
 @keyframes animation1{
