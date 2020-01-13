@@ -20,6 +20,20 @@ h1 {
     margin-left: 23%;
     margin-top: 75px;
 }
+
+#menu2 {
+    width: 800px;
+    height: 500px;
+    background-color: rgb(180, 180, 180);
+    margin-left: 25%;
+    margin-top: 75px;
+}
+
+#scoreMenu {
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+}
   
 #wrapper {
     width: 600px;
