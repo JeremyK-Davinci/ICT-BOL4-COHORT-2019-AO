@@ -163,13 +163,14 @@
 @media screen and (max-width: 600px){
     .infoBar p{display: none;}
     .infoBar a.icon {
-        float: right;
+        position: absolute;
+        left: 0;
         display: block;
         text-decoration: none;
         border: 1px solid white;
         color: white;
         border-radius: 25%;
-        padding: 0.4em 0.35em 0em 0.35em
+        padding: 0.4em 0.35em 0.4em 0.35em
     }
 
     .navBar #logo{display: none;}
@@ -177,7 +178,7 @@
     .navBar a.icon {
         margin-top: 2.2em;
         position: absolute;
-        right: 0;
+        left: 0;
         display: block;
         text-decoration: none;
         border: 1px solid black;
