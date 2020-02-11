@@ -124,7 +124,7 @@
     font-size: 1.4em;
 }
 
-#headerIcon{
+#headerIcon1, #headerIcon2, #headerIcon3{
     color: rgb(84, 84, 84);
     margin-right: 0.4em;
 }
