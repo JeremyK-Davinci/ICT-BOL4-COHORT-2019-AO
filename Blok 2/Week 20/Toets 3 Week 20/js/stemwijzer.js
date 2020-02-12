@@ -1,12 +1,11 @@
-var stellingHead = document.getElementById("stelling");
-var button1 = document.getElementById("btnEens");
-var button2 = document.getElementById("btnOneens");
-var button3 = document.getElementById("btnVolgende");
+var stellingHead;
+var button1;
+var button2;
+var button3;
 var objectArea = document.getElementById("stemWijzer");
 
 var agree = 0;
 var disagree = 0;
-var skip = 0;
 var partij;
 
 var i = 0;
@@ -23,87 +22,85 @@ var stellingen = [
     "We moeten maandag van de kalender verwijderen",
 ]
 
-var filtered = stellingen.filter(function (TTD){
-    return TTD != null;
-});
-
-console.log(filtered)
+console.log(stellingen)
 
 var currentStelling = stellingen[i]
 
-document.onload = stellingHead.innerHTML = filtered[0]
+function createElements(){
+    stellingHead = document.createElement("h1");
+    button1 = document.createElement("button");
+    button2 = document.createElement("button");
+    button3 = document.createElement("button");
+
+    stellingHead.setAttribute("id", "stelling");
+    button1.setAttribute("id", "btnEens");
+    button2.setAttribute("id", "btnOneens");
+    button3.setAttribute("id", "btnVolgende");
+
+    stellingHead.innerHTML = "Nederland moet terug naar de Gulden";
+    button1.innerHTML = "EENS";
+    button2.innerHTML = "ONEENS";
+    button3.innerHTML = "VOLGENDE";
+
+    button3.style.display = "none";
+
+    objectArea.appendChild(stellingHead);
+    objectArea.appendChild(button1);
+    objectArea.appendChild(button2);
+    objectArea.appendChild(button3);
+
+    stellingHead.innerHTML = stellingen[0]
+
+    printStelling();
+}
 
 function printStelling() {
-    stellingHead.innerHTML = filtered[i];
-    if(filtered[i] == undefined){
-        stellingHead.innerText = "Klaar! Dit is de uitslag";
-    }
+    stellingHead.innerHTML = stellingen[i];
 }
 
 function eens() {
-    if(i<filtered.length){
+    if(i<stellingen.length){
         agree++
-        i++
         button3.style.removeProperty("display")
         console.log(agree + ", " + currentStelling + ", " + i)
-        printStelling();
+        volgende();
     }
-    if(i == filtered.length){
+    if(i == stellingen.length){
         agree++
-        i++
         console.log(agree + ", " + currentStelling + ", " + i)
         button1.onclick = finished();
         button1.innerHTML = "results";
         button2.style.display = "none";
         button3.style.display = "none";
     }
-    if(i>filtered.length){
+    if(i>stellingen.length){
         finished();
     }
 }
 
 function oneens() {
-    if(i<filtered.length){
+    if(i<stellingen.length){
         disagree++
-        i++
         button3.style.removeProperty("display")
         console.log(disagree + ", " + currentStelling + ", " + i)
-        printStelling();
+        volgende();
     }
-    if(i == filtered.length){
+    if(i == stellingen.length){
         disagree++
-        i++
         console.log(disagree + ", " + currentStelling + ", " + i)
         button1.onclick = finished();
         button1.innerHTML = "results";
         button2.style.display = "none";
         button3.style.display = "none";
     }
-    if(i>filtered.length){
+    if(i>stellingen.length){
         finished();
     }
 }
 
-function skipped() {
-    if(i<filtered.length){
-        skip++
-        i++
-        button3.style.display = "none";
-        console.log(skip + ", " + currentStelling + ", " + i)
-        printStelling();
-    }
-    if(i == filtered.length){
-        skip++
-        i++
-        console.log(skip + ", " + currentStelling + ", " + i)
-        button1.onclick = finished();
-        button1.innerHTML = "results";
-        button2.style.display = "none";
-        button3.style.display = "none";
-    }
-    if(i>filtered.length){
-        finished();
-    }
+function volgende() {
+    button3.style.removeProperty("display");
+
 }
 
 function partijCheck() {
@@ -130,7 +127,7 @@ function finished() {
     var resultText = document.createElement("p");
     resultText.setAttribute("id", "result");
     objectArea.appendChild(resultText);
-    resultText.innerHTML = "U koos eens: " + agree + " keer. " + "U koos oneens: " + disagree + " keer. " + "U sloeg " + skip + " vragen over." + "De partij die het best bij u past is: " + partij;
+    resultText.innerHTML = "U koos eens: " + agree + " keer. " + "U koos oneens: " + disagree + " keer. " + "De partij die het best bij u past is: " + partij;
 }
 
-printStelling();
+createElements();
