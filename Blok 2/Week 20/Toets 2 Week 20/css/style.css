@@ -101,5 +101,6 @@
     float: left;
 }
 .box{
-    padding-bottom: 5px;
+    margin-bottom: 5px;
+    height: 400px;
 }

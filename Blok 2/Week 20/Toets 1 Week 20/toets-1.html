@@ -11,43 +11,27 @@
             robotArm.examLevel(1);
             robotArm.speed = 800;
             // Jouw instructies volgen hier
-            for(a=0; a<4; a++){
+            for(i=0; i<4; i++){
                 robotArm.moveRight();
             }
-            var Moving = true;
-            while(Moving){
-                Color();
+            robotArm.grab();
+            color = robotArm.scan();
+            while(color != null){
+                moveBlock(color);
             }
-            
-            function Color(){
-                Moving = false
-                robotArm.grab();
-                var color = robotArm.scan();
-                if(color != "null"){
-                    moveBlock(color);
+
+            function moveBlock(colors){
+                colors == "white" ? numbers = 4 : numbers = 5;
+                for(i=0; i < numbers; i++){
+                    colors == "white" ? robotArm.moveLeft() : robotArm.moveRight();
                 }
+                robotArm.drop();
+                for(i=0; i < numbers; i++){
+                    colors != "white" ? robotArm.moveLeft() : robotArm.moveRight();
+                }
+                robotArm.grab();
+                color = robotArm.scan();
             }
-            
-            function moveBlock(color){
-                if(color == "white"){
-                    for(i=0; i<4; i++){
-                        robotArm.moveLeft();
-                    }
-                    robotArm.drop();
-                    for(i=0; i<4; i++){
-                        robotArm.moveRight();
-                    }
-                    Moving = true}
-                else{
-                    for(i=0; i<5; i++){
-                        robotArm.moveRight();
-                    }
-                    robotArm.drop();
-                    for(i=0; i<5; i++){
-                        robotArm.moveLeft();
-                    }
-                    Moving = true}
-            }    
 
             // De door jou opgegeven instructies uitvoeren
             robotArm.run();
