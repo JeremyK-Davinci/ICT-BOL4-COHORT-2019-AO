@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;   
+}
+/*----------Index.php----------*/
+#Character_Table {
+    margin-top: 50px;
+    margin-left: 15%;
+    background-color: gray;
+}
+
+#CharacterCount{
+    margin-top: 25px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+#StrongestCharacter{
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 32px;
+}
+#StrongestCharacterName{
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+#StrongestCharacterImage{
+    width: 300px;
+    height: 300px;
+    margin-top: 10px;
+    border: 2px solid black;
+}
+
+th{
+    background-color: lightgray;
+}
+th a{
+    color: black;
+    text-decoration: none;
+}
+/*----------character.php----------*/
+#Character_Content_Box {
+    border: 3px solid black;
+    width: 70%;
+    margin-left: 15%;
+}
+
+#Character_Image, #Image{
+    width: 300px;
+    height: 300px;
+    float: left;
+}
+#Character_Name{
+    width: 300px;
+    text-align: center;
+    padding-bottom: 6px;
+}
+.Character_Attributes{
+    width: 300px;
+    border: 1px solid black;
+    text-align: center;
+}
+#Character_Color{
+    width: 300px;
+    border: 1px solid black;
+    text-align: center;
+}
+#Character_Description, #Bio{
+    float: left;
+    width: 60%;
+    text-align: center;
+    margin: 2% 0px 0px 14%;
+}
+a #Home {
+    width: 100%;
+    background-color: gray;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    border: 1px solid black;
+}
+
+#Name {
+    font-size: 28px;
+    font-weight: 600;
+}
+.Attributes {
+    font-size: 20px;
+}
+#Color {
+    font-size: 20px;
+}
+
+/*----------©----------*/
+#Copyright {
+    width: 100%;
+    height: 30px;
+    position: fixed;
+    bottom: 0;
+    background-color: gray;
+    text-align: center;
+}
+#Copyright_Text {
+    padding-top: 5px;
+    font-size: 16px;
+    color: white;
+}
