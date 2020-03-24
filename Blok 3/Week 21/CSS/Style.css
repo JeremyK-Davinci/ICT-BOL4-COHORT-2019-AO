@@ -1,0 +1,37 @@
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    font-family: 'Grand Hotel', cursive;
+}
+
+#txt1 {
+    margin-top: 20%;
+    margin-left: 43%;
+    font-size: 48px;
+}
+
+#time {
+    color: white;
+}
+
+#dayMessage {
+    color: white;
+    font-size: 40px;
+    margin-left: 46%;
+}
+
+.morning {
+    background-image: url("Img/morning.png");
+}
+
+.afternoon {
+    background-image: url("Img/afternoon.png");
+}
+
+.evening {
+    background-image: url("Img/evening.png");
+}
+
+.night {
+    background-image: url("Img/night.png");
+}
