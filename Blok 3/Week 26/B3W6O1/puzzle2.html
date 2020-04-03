@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Puzzle 2</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="bg-dark container-fluid p-0 m-0">
+    <div id="navbar" class="container-fluid col-sm-12 col-md-12 navbar bg-secondary">
+        <div class="navbar-header">
+            <h1 class="text-white">Bootstrap Puzzle 2</h1>
+        </div>
+        <div class="dropdown show">
+            <a class="btn btn-secondary dropdown" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-2x fa-bars"></i></a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li class="dropdown-item"><a href="index.html">Home</a></li>
+                <li class="dropdown-item"><a href="puzzle1.html">Puzzle 1</a></li>
+                <li class="dropdown-item"><a href="puzzle2.html">Puzzle 2</a></li>
+                <li class="dropdown-item"><a href="puzzle3.html">Puzzle 3</a></li>
+                <li class="dropdown-item"><a href="bonus.html">Bonus</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="carousleExampleSlidesOnly" class="carousel slide col-sm-12 col-md-12" data-ride="carousel">
+        <div class="carousel-inner">
+            <a class="carousel-item active col-sm-12 col-md-12" href="img/img1.jpg" target="_blank">
+                <img src="img/img1.jpg" class="d-block w-100">
+                <span class="carousel-caption d-sm-block">Bekijk Boom 1</span>
+            </a>
+            <a class="carousel-item col-sm-12 col-md-12" href="img/img2.jpg" target="_blank">
+                <img src="img/img2.jpg" class="d-block w-100">
+                <span class="carousel-caption d-sm-block">Bekijk Boom 2</span>
+            </a>
+            <a class="carousel-item col-sm-12 col-md-12" href="img/img3.jpg" target="_blank">
+                <img src="img/img3.jpg" class="d-block w-100">
+                <span class="carousel-caption d-sm-block">Bekijk Boom 3</span>
+            </a>
+            <a class="carousel-item col-sm-12 col-md-12" href="img/img4.jpg" target="_blank">
+                <img src="img/img4.jpg" class="d-block w-100">
+                <span class="carousel-caption d-sm-block">Bekijk Boom 4</span>
+            </a>
+            <a class="carousel-item col-sm-12 col-md-12" href="img/img5.jpg" target="_blank">
+                <img src="img/img5.jpg" class="d-block w-100">
+                <span class="carousel-caption d-sm-block">Bekijk Boom 5</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="col-sm-10 col-md-10 m-2 container bg-secondary justify-content-center">
+        <div class="row">
+            <div class="card col-sm-5 col-md-5 mr-4 ml-5 mt-2">
+                <img src="img/item1.jpg">
+                <h2>Etiam hendrerit vel sem ac accumsan</h2>
+                <p id="item1text" class="d-sm-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
+                <p><a href="#item1text">Lees meer &hellip;</a></p>
+            </div>
+            <div class="card col-sm-5 col-md-5 mt-2">
+                <img src="img/item2.jpg">
+                <h2>Etiam hendrerit vel sem ac accumsan</h2>
+                <p id="item2text" class="d-sm-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
+                <p><a href="#item2text">Lees meer &hellip;</a></p>
+            </div>
+            <div class="card col-sm-5 col-md-5 mr-4 ml-5 mt-3">
+                <img src="img/item3.jpg">
+                <h2>Etiam hendrerit vel sem ac accumsan</h2>
+                <p id="item3text" class="d-sm-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
+                <p><a href="#item3text">Lees meer &hellip;</a></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="card col-sm-5 col-md-5 ml-5 mr-4 mt-3">
+                <img src="img/item4.jpg">
+                <h2>Etiam hendrerit vel sem ac accumsan</h2>
+                <p id="item4text" class="d-sm-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
+                <p><a href="#item4text">Lees meer &hellip;</a></p>
+            </div>
+            <div class="card col-sm-5 col-md-5 mt-3">
+                <img src="img/item5.jpg">
+                <h2>Etiam hendrerit vel sem ac accumsan</h2>
+                <p id="item5text" class="d-sm-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
+                <p><a href="#item5text">Lees meer &hellip;</a></p>
+            </div>
+            <div class="card col-sm-5 col-md-5 ml-5 mt-3">
+                <img src="img/item6.jpg">
+                <h2>Etiam hendrerit vel sem ac accumsan</h2>
+                <p id="item6text" class="d-sm-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
+                <p><a href="#item6text">Lees meer &hellip;</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid col-md-12 col-sm-12">
+        <div class="row justify-content-end">
+            <span class="d-sm-none d-md-none">Created with:</span>
+            <a href="https://getbootstrap.com/" target="_blank"><img src="img/logo-bootstrap.png"></a>
+            <a href="https://fontawesome.com/" target="_blank"><img src="img/logo-fontawsome.png"></a>
+            <a href="https://w3schools.com/" target="_blank"><img src="img/logo-w3schools.png"></a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
