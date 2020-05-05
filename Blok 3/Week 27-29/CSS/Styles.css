@@ -1,0 +1,365 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body{
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 5000% 5000%;
+    animation: gradient 15s ease infinite;
+}
+
+#Nav{
+    width: 100%;
+    height: 30px;
+    background-color: gray;
+    display: inline-block;
+    text-align: center;
+}
+
+.Nav-Item{
+    width: 25%;
+    height: 20px;
+    display: block;
+    color: white;
+    float: left;
+    margin-left: 17%;
+    text-decoration: none;
+    transition: 1s;
+    padding: 5px;
+}
+.Nav-Item:hover{
+    background-color: rgb(77, 77, 77);
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+/*----------Home.php----------*/
+#Page-Container{
+    width: 152.38em;
+    height: auto;
+    display: block;
+    background-color: white;
+    margin: 2.5em auto;
+}
+.Link{
+    width: 30em;
+    height: 30em;
+    border: 2px solid black;
+    transition: 0.5s;
+}
+.Link:hover{
+    transform: scale(1.2);
+}
+/*----------Index.php----------*/
+table{
+    width: 70%;
+    border: 1;
+    margin: 50px auto;
+    background-color: gray; 
+}
+th, td{
+    background-color: lightgray;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#button-Container{
+    width: 13rem;
+    margin: 6em auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/**//*Custom Buttons*//**/
+.Add{
+    font-size: 24px;
+    color: green;
+    padding: 15px 60px;
+    display: inline-block;
+    letter-spacing: 0.2em;
+    text-decoration: none;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.2s;
+    position: relative;
+}
+.Add:hover{
+    color: rgb(2, 77, 2);
+    background-color: green;
+    box-shadow: 0 0 10px green, 0 0 40px green, 0 0 80px green;
+    transition-delay: 1s;
+}
+.Add span{
+    position: absolute;
+    display: block;
+}
+.Add span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, green);
+}
+.Add:hover span:nth-child(1){
+    left: 100%;
+    transition: 1s;
+}
+.Add span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, green);
+}
+.Add:hover span:nth-child(2){
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+.Add span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, green);
+}
+.Add:hover span:nth-child(3){
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+.Add span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, green);
+}
+.Add:hover span:nth-child(4){
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+.Edit{
+    margin-top: 0.1em;
+    width: 60px;
+    color: yellow;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    overflow: hidden;
+    transition: 1s;
+    position: relative;
+}
+.Edit:hover{
+    color: rgb(114, 114, 47);
+    background-color: yellow;
+    box-shadow: 0 0 10px yellow, 0 0 40px yellow, 0 0 80px yellow;
+}
+
+.Remove{
+    margin-top: 0.1em;
+    width: 60px;
+    color: red;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    overflow: hidden;
+    transition: 1s;
+    position: relative;
+}
+.Remove:hover{
+    color: rgb(77, 13, 13);
+    background-color: red;
+    box-shadow: 0 0 10px red, 0 0 40px red, 0 0 80px red;
+}
+
+.View{
+    margin-top: 0.1em;
+    width: 60px;
+    color: #2196f3;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    overflow: hidden;
+    transition: 1s;
+    position: relative;
+}
+.View:hover{
+    color: #255784;
+    background-color: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+}
+/*----------Game.php----------*/
+#game-Container{
+    width: 70%;
+    height: auto;
+    display: inline-flex;
+    margin: 10% 14%;
+    background-color: white;
+    border: gray solid 0.2em;
+    border-radius: 0.6em;
+    padding: 0.6em;
+}
+
+#game-Image{
+    width: 20%;
+    height: 20%;
+    text-align: center;
+}
+#Image{
+    width: 40%;
+    height: 40%;
+}
+
+#players, #Start-Time, #game-Guide, #expansions, #skills{
+    height: 30px;
+    margin: 5px;
+    text-align: left;
+    margin-left: 25px;
+}
+
+#game-Name{
+    width: 60%;
+    height: 20%;
+    text-align: center;
+}
+
+#game-Video{
+    padding: 5px;
+}
+
+#game-Site{
+    margin-top: 10%;
+    width: 20%;
+    height: 20%;
+    text-align: center;
+}
+.Website{
+    vertical-align: middle;
+    padding: 10px 40px;
+    color: #2196f3;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    overflow: hidden;
+    transition: 1s;
+    position: relative;
+}
+.Website:hover{
+    color: #255784;
+    background-color: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+}
+/*-----------Includes-----------*/
+/*----------Footer.php----------*/
+#footer{
+    width: 100%;
+    height: 30px;
+    position: fixed;
+    bottom: 0;
+    background-color: gray;
+    text-align: center;
+}
+#footer-Text{
+    padding-top: 5px;
+    font-size: 16px;
+    color: white;
+}
+/*------------A-E-R------------*/
+.row{
+    width: 100%;
+    height: auto;
+}
+.input{
+    margin: 15px;
+    margin-left: 20%;
+}
+.submit{
+    margin-left: 45%;
+    width: 10%;
+    height: 35px;
+}
+/*-----------Add.php-----------*/
+#Add-Container{
+    width: 800px;
+    height: 400px;
+    margin: 200px auto;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.Add-Text {
+    margin-left: 40px;
+}
+/*-----------Edit.php-----------*/
+#edit-Container{
+    width: 800px;
+    height: 200px;
+    margin: 200px auto;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: white;
+}
+/*-----------Remove.php-----------*/
+#remove-Container{
+    width: 1000px;
+    height: 200px;
+    margin: 200px auto;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.remove-Text{
+    margin-left: 10px;
+}
+
+.Confirm{
+    margin-top: 2em;
+    margin-left: 16em;
+    padding: 15px 60px;
+    color: red;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    overflow: hidden;
+    transition: 1s;
+    position: relative;
+}
+.Confirm:hover{
+    color: rgb(77, 13, 13);
+    background-color: red;
+    box-shadow: 0 0 10px red, 0 0 40px red, 0 0 80px red;
+}
+
+.Cancel{
+    margin-top: 2em;
+    margin-left: 5em;
+    padding: 15px 60px;
+    color: #2196f3;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    overflow: hidden;
+    transition: 1s;
+    position: relative;
+}
+.Cancel:hover{
+    color: #255784;
+    background-color: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+}
