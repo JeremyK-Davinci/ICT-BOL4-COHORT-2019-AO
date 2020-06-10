@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+body{
+    background: lightgray;
+}
+
+.table1{
+    border: black;
+    width: 30%;
+    margin: 10% auto;
+}
+
+.table2{
+    border: black;
+    width: 40%;
+    margin: 10% auto;
+}
+
+.nav{
+    display: flex;
+    height: 2.5em;
+    background-color: gray;
+    font-size: 1.2em;
+}
+
+li{
+    display: inline-block;
+    padding: 12px;
+}
+li a{
+    text-decoration: none;
+}
+.horseName{
+    margin-top: 5%;
+}
+.edit{
+    background-color: yellow;
+    color: black;
+    padding: 0.9em;
+}
+.remove{
+    background-color: red;
+    color: black;
+    padding: 0.5em;
+}

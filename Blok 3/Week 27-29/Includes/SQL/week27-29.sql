@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Gegenereerd op: 17 apr 2020 om 09:09
+-- Gegenereerd op: 05 mei 2020 om 21:26
 -- Serverversie: 8.0.18
 -- PHP-versie: 7.3.11
 
@@ -109,15 +109,16 @@ CREATE TABLE `planning` (
   `game_id` int(11) NOT NULL,
   `guide_id` int(11) NOT NULL,
   `start_time` time NOT NULL,
-  `duration` time NOT NULL
+  `duration` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
+  `players` varchar(255) COLLATE utf8mb4_general_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `planning`
 --
 
-INSERT INTO `planning` (`id`, `game_id`, `guide_id`, `start_time`, `duration`) VALUES
-(1, 2, 3, '12:30:00', '00:00:55');
+INSERT INTO `planning` (`id`, `game_id`, `guide_id`, `start_time`, `duration`, `players`) VALUES
+(10, 24, 4, '20:00:00', '75', 'James, David, Micheal');
 
 --
 -- Indexen voor geëxporteerde tabellen
@@ -161,7 +162,7 @@ ALTER TABLE `games`
 -- AUTO_INCREMENT voor een tabel `planning`
 --
 ALTER TABLE `planning`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
