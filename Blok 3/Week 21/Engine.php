@@ -15,6 +15,7 @@
     <title>Clock</title>
 </head>
 <body>
+<?= "hello"?>
     <div id="txt1"><?php echo "<h1 id='time'>$time</h1>" ?></div>
 </body> 
 </html>
